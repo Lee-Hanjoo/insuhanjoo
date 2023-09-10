@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import CoffeeOrder from './pages/coffeeorder';
-import Braad from './pages/bread';
+import BraadOrder from './pages/breadorder';
 
 function App() {
   const [coffee, setCoffee] = useState<number>(0)
@@ -17,7 +17,7 @@ function App() {
       <br />
       <br />
       <br />
-      <Braad />
+      <BraadOrder bread={bread} setBread={setBread}/>
     </div>
   );
 }
