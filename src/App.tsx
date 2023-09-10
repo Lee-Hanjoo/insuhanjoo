@@ -1,24 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import CoffeeOrder from './pages/coffeeorder';
+import Braad from './pages/bread';
 
 function App() {
+  const [coffee, setCoffee] = useState<number>(0)
+  const [bread, setBread] = useState<number>(0)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CoffeeOrder coffee={coffee} setCoffee={setCoffee} />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Braad />
     </div>
   );
 }
